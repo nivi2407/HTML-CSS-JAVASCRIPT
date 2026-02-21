@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<!-- Main HTML document for Rock Paper Scissors game -->
+<html lang="en">
+
+<head>
+    <!-- Character encoding for proper text display -->
+    <meta charset="UTF-8" />
+    <!-- Page title shown in browser tab -->
+    <title>Rock Paper Scissors</title>
+    <!-- Link to external CSS stylesheet -->
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <!-- Main game container box -->
+    <div id="box">
+        <!-- Game title -->
+        <h1>Rock Paper Scissors</h1>
+
+        <!-- Score display section -->
+        <div id="score">
+            <!-- Human player score -->
+            <span>You: <strong id="humanScore">0</strong></span>
+            <!-- Computer player score -->
+            <span>Computer: <strong id="computerScore">0</strong></span>
+        </div>
+
+        <!-- Game choice buttons -->
+        <div id="buttons">
+            <!-- Rock button with image -->
+            <button data-choice="rock"><img src="rock.jpg" alt="rock"></button>
+            <!-- Paper button with image -->
+            <button data-choice="paper"><img src="paper.jpg" alt="paper"></button>
+            <!-- Scissors button with image -->
+            <button data-choice="scissors"><img src="scissor.jpg" alt="scissor"></button>
+        </div>
+
+        <!-- Reset button to start new game -->
+        <button id="reset">Reset Game</button>
+        <!-- Result text showing game status -->
+        <p id="result">First to 2 wins.</p>
+    </div>
+
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>

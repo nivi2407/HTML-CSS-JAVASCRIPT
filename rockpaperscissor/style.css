@@ -1,0 +1,101 @@
+/* Global reset - removes default browser margins and paddings */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styling - centers content vertically and horizontally */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #37455a; /* Dark blue background */
+}
+
+/* Main game container box styling */
+#box {
+    background: white;
+    padding: 30px 50px;
+    border-radius: 15px; /* Rounded corners */
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15); /* Box shadow for depth */
+    text-align: center;
+}
+
+/* Game title styling */
+h1 {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Score section styling */
+#score {
+    margin-bottom: 25px;
+    font-size: 18px;
+}
+
+/* Individual score items spacing */
+#score span {
+    margin: 0 15px;
+}
+
+/* Buttons container - flexbox for horizontal alignment */
+#buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px; /* Space between buttons */
+    margin: 30px 0;
+}
+
+/* Game choice button styling */
+#buttons button {
+    width: 150px;
+    height: 150px;
+    padding: 10px;
+    border: none;
+    background: #f8f9fa;
+    border-radius: 50%; /* Circular buttons */
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s; /* Smooth hover transitions */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15); /* Rounded shadow */
+}
+
+/* Button hover effect - scale up */
+#buttons button:hover {
+    transform: scale(1.1);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Image styling inside buttons - fit within button */
+#buttons button img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+/* Reset button styling */
+#reset {
+    padding: 12px 25px;
+    font-size: 16px;
+    background-color: #800b0b; /* Red color */
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Reset button hover effect */
+#reset:hover {
+    background-color: #b2320b;
+}
+
+/* Result text styling */
+#result {
+    margin-top: 20px;
+    font-size: 16px;
+    color: #666;
+}
