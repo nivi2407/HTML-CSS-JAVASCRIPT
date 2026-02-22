@@ -16,7 +16,7 @@
             justify-content: center;
             align-items: center;
             min-height: 100vh;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            background: #9b59b6;
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         }
 
@@ -115,6 +115,22 @@
         .delete:hover {
             background: #dd6b20;
         }
+
+        .footer {
+            text-align: center;
+            margin-top: 15px;
+            color: #666;
+            font-size: 12px;
+        }
+
+        .footer a {
+            color: #667eea;
+            text-decoration: none;
+        }
+
+        .footer a:hover {
+            text-decoration: underline;
+        }
     </style>
 </head>
 <body>
@@ -147,6 +163,9 @@
             
             <button class="number" onclick="appendNumber('0')">0</button>
             <button class="equals" onclick="calculate()">=</button>
+        </div>
+        <div class="footer">
+            © <a href="https://github.com/nivi2407" target="_blank">nivi2407</a>
         </div>
     </div>
 
